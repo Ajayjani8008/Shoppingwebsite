@@ -1,0 +1,233 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background_image.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    line-height: 1.6;
+}
+
+header {
+    background-color:#1a1616;
+    color: White;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#cart {
+    color: White;
+    font-weight: bold;
+    background-color:#3bd563;
+    border-radius: 5px;
+    padding: 8px 15px;
+    display: inline-block;
+    margin-top: 20px;
+    align-self: flex-end; 
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    border: 1px solid LightGray;
+    width: calc(33.32% - 20px);
+    padding: 0;
+    margin: 10px;
+    background-color: White;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: DimGray;
+    font-weight: bold;
+}
+
+.product p {
+    font-size: 14px;
+    color: DimGray;
+    margin-bottom: 10px;
+}
+
+
+.add-to-cart-btn {
+    background-color: rgb(215, 54, 0);
+    color: White;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: rgb(123, 26, 27);
+}
+
+#cart-items {
+    border-top: 1px solid LightGray;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+#cart-list {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-list li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+}
+
+#cart-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+
+#checkout-btn {
+    background-color: #190074;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-btn:hover {
+    background-color: #3a6d8f;
+}
+
+
+nav {
+    background-color: #1a1616;
+    color: White;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: White;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: LightCyan;
+}
+
+
+@media (max-width: 767px) {
+    .product {
+        width: calc(100% - 20px); 
+    }
+
+    
+    .product h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .product p {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    #cart-total {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #checkout-btn {
+        padding: 8px 12px;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+element.style {
+    color: #ffffff;
+}
+/* #WhatInYourCart{
+    padding: 5px;
+  
+    margin: 20px 505px 20px 550px;
+    border-radius: 5px;
+    color: rgb(243, 207, 207);
+    border-color: rgb(83, 201, 222) ;
+    background-color: #190074;
+} */
